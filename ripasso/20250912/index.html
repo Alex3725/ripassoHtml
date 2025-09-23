@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ripasso html</title>
+</head>
+
+<body>
+    <header>
+        <h1>Esercitazione ripasso html</h1>
+    </header>
+
+
+    <main>
+        <section class="first">
+
+            <h3> Argomenti da ripassare</h3>
+            <ol>
+                <li><a href="id_h1"></a> Tag h1...h6</li>
+                <li><a href="id_p"></a> Tag p</li>
+                <li><a href="#id_div"></a> Tag div e stato sostituito dai tag parlanti header, section, footer</li>
+                <li><a href="#id_elenchi"></a> Tag per elenchi ol, ul, li</li>
+                <li> <a href="#id_tabella">Tag tabella table, thead, tbody, tb, th, td</a></li>
+            </ol>
+        </section>
+        <section class="second">
+            <article class="descrizione_tag" id="id_h1">
+                <h1>1. Teoria sui tag di intestazione HTML (h1 - h6)</h1>
+                <p>I tag di intestazione HTML, da h1 a h6, servono per definire titoli e sottotitoli all'interno di una pagina web. Sono fondamentali per strutturare il contenuto in modo gerarchico e semantico.</p>
+                
+                <h2>Gerarchia</h2>
+    
+                <p>h1 rappresenta il titolo principale della pagina, mentre h2 è un sottotitolo del h1. Si prosegue con h3, h4, h5 e h6, che indicano livelli sempre più bassi di importanza.</p>
+    
+                <h2>Importanza semantica</h2>
+    
+                <ul>
+                    <li><b>SEO:</b> I motori di ricerca analizzano i titoli per comprendere la struttura e il contenuto della pagina.</li>
+                    <li><b>Accessibilità:</b> I lettori di schermo usano i titoli per navigare tra le sezioni.</li>
+                    <li><b>Organizzazione:</b>  Aiutano a rendere il contenuto più leggibile e ordinato.</li>
+                </ul>
+    
+                <h2>Stile predefinito e personalizzazione</h2>
+    
+                <p>Di default, i browser visualizzano i titoli con dimensioni decrescenti: h1 è il più grande, h6 il più piccolo. È possibile personalizzare lo stile con CSS per modificare colori, dimensioni e font.</p>
+    
+                <h2>Buone pratiche</h2>
+                <ul>
+                    <li>Usa un solo h1 per pagina per indicare il tema principale.</li>
+                    <li>
+                        Segui una gerarchia logica: non saltare livelli (es. da h1 a h4).
+                    </li>
+                    <li>Non usare i tag di intestazione solo per ingrandire il testo: per quello è meglio usare span o div con CSS.</li>
+                </ul>
+    
+            </article>
+    
+            <article class="descrizione_tag" id="id_p">
+                
+            <h1>2. Il tag &lt;p&gt; in HTML</h1>
+            <p>Il tag <code>&lt;p&gt;</code> viene utilizzato per definire un paragrafo di testo in una pagina HTML. È uno dei tag più comuni e serve a strutturare il contenuto testuale in blocchi leggibili.</p>
+    
+            <h2>Esempio di utilizzo:</h2>
+            <p>Qui sotto trovi un esempio pratico:</p>
+            <pre><code>&lt;p&gt;Questo è un paragrafo di esempio.&lt;/p&gt;</code></pre>
+    
+            <h2>Caratteristiche:</h2>
+            <ul>
+                <li>Il testo racchiuso tra i tag <code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code> viene visualizzato come un blocco separato.</li>
+                <li>Il browser aggiunge automaticamente uno spazio sopra e sotto ogni paragrafo.</li>
+                <li>È possibile applicare stili CSS per personalizzare l'aspetto dei paragrafi.</li>
+            </ul>
+    
+            <h2>Nota:</h2>
+            <p>È buona pratica usare il tag <code>&lt;p&gt;</code> per migliorare la leggibilità e la semantica del contenuto HTML.</p>
+            </div>
+    
+            </article>
+    
+            <article class="descrizione_tag" id="id_div">
+                <h1>3. HTML5 e la struttura semantica</h1>
+               
+                   <div class="head">
+                    <h2>Tag &lt;header&gt;</h2>
+                    <p>Il tag <code>&lt;header&gt;</code> è stato introdotto per rappresentare l'intestazione di una pagina o di una sezione. A differenza di un generico <code>&lt;div&gt;</code>, ha un significato semantico chiaro, utile per i motori di ricerca e per l'accessibilità.</p>
+                   </div>
+                       
+                   
+               
+                   <div class="sect">
+                    <h2>Tag &lt;section&gt;</h2>
+                    <p>Il tag <code>&lt;section&gt;</code> serve a suddividere il contenuto in blocchi tematici. HTML5 lo ha introdotto per dare un significato preciso alle parti del documento, migliorando la leggibilità del codice e la comprensione da parte di browser e screen reader.</p>
+                   </div>
+                       
+                   
+               
+                   <div class="fot">
+                    <h2>Tag &lt;footer&gt;</h2>
+                       <p>Il tag <code>&lt;footer&gt;</code> rappresenta il piè di pagina. Come gli altri tag semantici, sostituisce l'uso generico di <code>&lt;div&gt;</code> per rendere il codice più chiaro e strutturato, facilitando la manutenzione e l'indicizzazione.</p>
+                   </div>
+                       
+                   
+               
+                   <p>In sintesi, HTML5 ha introdotto questi tag per **migliorare la semantica del codice**, rendendo più facile per sviluppatori, browser e tecnologie assistive comprendere la struttura e il significato del contenuto, rispetto all'uso generico e poco descrittivo dei <code>&lt;div&gt;</code>.</p>
+    
+               </article>
+    
+            <article class="descrizione_tag" id="id_elenchi">
+                
+                <h1>4. Elenchi in HTML</h1>
+    
+                <p>In HTML esistono due tipi principali di elenchi:</p>
+    
+                <h2>1. Elenco non ordinato: &lt;ul&gt;</h2>
+                <p>Il tag <code>&lt;ul&gt;</code> (unordered list) crea un elenco i cui elementi non hanno un ordine specifico. Ogni voce è preceduta da un punto o un simbolo.</p>
+                <ul>
+                    <li>Usato per liste generiche</li>
+                    <li>Non ha numerazione automatica</li>
+                    <li>Ogni elemento è racchiuso in &lt;li&gt;</li>
+                </ul>
+    
+                <h2>2. Elenco ordinato: &lt;ol&gt;</h2>
+                <p>Il tag <code>&lt;ol&gt;</code> (ordered list) crea un elenco numerato. Ogni voce è preceduta da un numero o una lettera, indicando un ordine preciso.</p>
+                <ol>
+                    <li>Usato per sequenze o passaggi</li>
+                    <li>Ha numerazione automatica</li>
+                    <li>Ogni elemento è racchiuso in &lt;li&gt;</li>
+                </ol>
+    
+                <h2>Confronto tra &lt;ul&gt; e &lt;ol&gt;</h2>
+                <ul>
+                    <li><strong>&lt;ul&gt;</strong>: elenco senza ordine → utile per liste di cose, caratteristiche, opzioni.</li>
+                    <li><strong>&lt;ol&gt;</strong>: elenco ordinato → utile per istruzioni, classifiche, passaggi da seguire.</li>
+                    <li>Entrambi usano il tag <code>&lt;li&gt;</code> per definire ogni voce dell'elenco.</li>
+                </ul>
+    
+            </article>
+    
+            <article class="descrizione_tag" id="id_tabella">
+                
+                <h1>5. Tabelle in HTML</h1>
+    
+                <p>Le tabelle in HTML vengono utilizzate per organizzare i dati in righe e colonne. Sono composte da diversi tag, ognuno con una funzione specifica.</p>
+    
+                <h2>Tag principali delle tabelle</h2>
+                <ul>
+                    <li><strong>&lt;table&gt;</strong>: definisce l'inizio della tabella.</li>
+                    <li><strong>&lt;tr&gt;</strong>: definisce una riga della tabella (table row).</li>
+                    <li><strong>&lt;td&gt;</strong>: definisce una cella di dati (table data).</li>
+                    <li><strong>&lt;th&gt;</strong>: definisce una cella di intestazione (table header), solitamente in grassetto e centrata.</li>
+                    <li><strong>&lt;caption&gt;</strong>: aggiunge un titolo alla tabella.</li>
+                    <li><strong>&lt;thead&gt;</strong>, <strong>&lt;tbody&gt;</strong>, <strong>&lt;tfoot&gt;</strong>: suddividono la tabella in intestazione, corpo e piè di pagina per una struttura più chiara.</li>
+                </ul>
+    
+                <h2>Differenze tra &lt;th&gt; e &lt;td&gt;</h2>
+                <ul>
+                    <li><strong>&lt;th&gt;</strong>: usato per le intestazioni di colonna o riga, il testo è di solito centrato e in grassetto.</li>
+                    <li><strong>&lt;td&gt;</strong>: usato per i dati normali della tabella, il testo è allineato a sinistra per impostazione predefinita.</li>
+                </ul>
+    
+                <p>Le tabelle sono utili per visualizzare dati strutturati, ma è importante non abusarne per layout grafici: per quelli si preferisce usare CSS.</p>
+    
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <div>&copy Previtali Alessandro </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
