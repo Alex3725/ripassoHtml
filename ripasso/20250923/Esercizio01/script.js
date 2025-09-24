@@ -14,6 +14,11 @@ let differenza = num1 - num2
 let prodotto = num1 * num2
 let divisione = num1/num2
 
+console.log(somma);
+console.log(differenza);
+console.log(prodotto);
+console.log(divisione);
+
 bot.addEventListener('click', ()=>{
     outSomma.textContent = somma
     outDifferenza.textContent = differenza
