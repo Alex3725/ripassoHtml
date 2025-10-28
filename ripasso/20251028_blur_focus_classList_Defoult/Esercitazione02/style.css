@@ -1,0 +1,58 @@
+:root{
+    --brand: #0c6;
+}
+body{
+    font: 16/1.4 system-ui, sans-serif;
+    margin: 24px;
+}
+
+label{
+    display: block;
+    margin-block: 12px;
+}
+input{
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+/*Stato focus visuale*/
+
+.form-group {
+    margin-bottom: 1rem;
+}
+input:focus, .focused {
+    outline: 2px solid #007BFF;
+}
+.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+#feedback {
+    margin-top: 1rem;
+    color: green;
+}
+
+/*suggerimenti /messaggi*/
+.dis{
+    background-color: #444;
+    color: white;
+}
+.act{
+    background-color: blue;
+    color: #ddd;
+}
+.hint{
+    min-height: 1.2em;
+    color: #444;
+}
+.ok{
+    color: #1a7f37;
+}
+.err{
+    color: #b42318;
+    border-color: #b42318; 
+    box-shadow: 0 0 0 3px rgba (180,35,24, .12) ;
+}

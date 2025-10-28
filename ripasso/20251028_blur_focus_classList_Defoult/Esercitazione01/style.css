@@ -1,0 +1,41 @@
+:root{
+    --brand: #0c6;
+}
+body{
+    font: 16/1.4 system-ui, sans-serif;
+    margin: 24px;
+}
+
+label{
+    display: block;
+    margin-block: 12px;
+}
+input{
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+/*Stato focus visuale*/
+
+.is-focused{
+    border-color: var(--brand);
+    box-shadow: 0 0 0 3px rgba(0, 200, 120, .15);
+}
+
+/*suggerimenti /messaggi*/
+
+.hint{
+    min-height: 1.2em;
+    color: #444;
+}
+.ok{
+    color: #1a7f37;
+}
+.err{
+    color: #b42318;
+    border-color: #b42318; 
+    box-shadow: 0 0 0 3px rgba (180,35,24, .12) ;
+}

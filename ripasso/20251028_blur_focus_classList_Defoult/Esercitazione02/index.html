@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Iscriviti alla Newsletter</h2>
+    <form id="newsletterForm">
+        <div class="form-group">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="privacy" name="privacy">
+            <label for="privacy">Accetto la privacy</label>
+        </div>
+
+        <button type="submit" id="submitBtn" class="disabled" disabled>Iscriviti</button>
+    </form>
+
+    <div id="feedback" aria-live="polite"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
