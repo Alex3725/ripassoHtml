@@ -1,0 +1,49 @@
+:root {
+  --bg: #0f1724;
+  --muted: #9aa4b2;
+  --accent: #7c3aed;
+  --glass: rgba(255,255,255,0.05);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg,#071025,#071a2b);
+  color: #e6eef8;
+  padding: 20px;
+}
+h1 {
+  color: var(--accent);
+}
+p {
+  color: var(--muted);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table th, table td {
+  border: 1px solid #444;
+  padding: 8px;
+}
+table th {
+  background: #1572b6;
+  color: #fff;
+}
+tr:nth-child(even) { background: rgba(255,255,255,0.05); }
+input, select, button {
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: var(--glass);
+  color: #e6eef8;
+}
+button {
+  background: var(--accent);
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.9;
+}

@@ -3,6 +3,7 @@
     const privacyCheckbox = document.getElementById('privacy');
     const submitBtn = document.getElementById('submitBtn');
     const feedback = document.getElementById('feedback');
+    const form = document.getElementById('newsletterForm');
 
     // Gestione focus/blur
     [nameInput, emailInput].forEach(input => {
@@ -21,7 +22,7 @@
     });
 
     // Simulazione invio
-    document.getElementById('newsletterForm').addEventListener('submit', (e) => {
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
       feedback.textContent = "Iscrizione completata con successo!";
     });

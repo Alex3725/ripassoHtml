@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <title>Esercizio 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!doctype html>
+    <html lang="it">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Esercizio 1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <!--home-->
+                <li><a href="../../">
+                        <h2>home</h2>
+                    </a></li>
+                <li>
+                    <div class="dropdown-container">
+                        <button class="menu-button" onclick="toggleMenu('dropdownht')">
+                            Esercizi Html
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="16" height="16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div id="dropdownht" class="dropdown Eshtml" style="display:none;">
+                            <div class="contenuto-dropdown">
+                                <a href="../../html/Esercizio01/index.html"
+                                    onclick="showPage('../../html/Esercizio01/index.html')">Esercizi 01</a>
+                                <a href="../../html/Esercizio02/index.html"
+                                    onclick="showPage('../../html/Esercizio02/index.html')">Esercizi 02</a>
+                                <a href="../../html/Esercizio03/index.html"
+                                    onclick="showPage('../../html/Esercizio03/index.html')">Esercizi 03</a>
+                                <a href="../../html/Esercizio04/index.html"
+                                    onclick="showPage('../../html/Esercizio04/index.html')">Esercizi 04</a>
+                                <a href="../../html/Esercizio05/index.html"
+                                    onclick="showPage('../../html/Esercizio05/index.html')">Esercizi 05</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="dropdown-container">
+                        <button class="menu-button" onclick="toggleMenu('dropdownjs')">
+                            Esercizi js
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="16" height="16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div id="dropdownjs" class="dropdown Esjs" style="display:none;">
+                            <div class="contenuto-dropdown">
+                                <a href="../../js/Esercizio01/index.html"
+                                    onclick="showPage('../../js/Esercizio01/index.html')">Esercizi 01</a>
+                                <a href="../../js/Esercizio02/index.html"
+                                    onclick="showPage('../../js/Esercizio02/index.html')">Esercizi 02</a>
+                                <a href="../../js/Esercizio03/index.html"
+                                    onclick="showPage('../../js/Esercizio03/index.html')">Esercizi 03</a>
+                                <a href="../../js/Esercizio04/index.html"
+                                    onclick="showPage('../../js/Esercizio04/index.html')">Esercizi 04</a>
+                                <a href="../../js/Esercizio05/index.html"
+                                    onclick="showPage('../../js/Esercizio05/index.html')">Esercizi 05</a>
+                                <a href="../../js/Esercizio06/index.html"
+                                    onclick="showPage('../../js/Esercizio06/index.html')">Esercizi 06</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Esercizio 2 — Collegamenti ipertestuali</h1>
+            <ul class="contenitore_link">
+                <li><a href="https://www.google.com" target="_blank">Link esterno a Google</a></li>
+                <li><a href="../../index.html">Link interno -> torna alla home</a></li>
+                <li><a href="#id_footer">Link ad ancora interna</a></li>
+            </ul>
+            <footer id="id_footer">
+                <p>Questo è il footer dell'esercizio.</p>
+            </footer>
+            <div class="img">
+                <a href=""><img src="../../img/Progetto senza titolo.png" alt=""></a>
+            </div>
+        </main>
+
+        <script src="./script.js"></script>
+    </body>
+
+    </html>

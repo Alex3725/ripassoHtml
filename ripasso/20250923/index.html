@@ -1,31 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Compito — Esercizi HTML & JS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="home">
-        <nav class="navb">
+  <main class="wrap" role="main">
+    <header>
+      <div class="brand">
+        <div class="logo">CE</div>
+        <div>
+          <h1>Compito: Esercizi HTML & JS</h1>
+          <p class="lead">Pagina principale con i link agli esercizi (5 HTML/CSS e 6 JavaScript).</p>
+        </div>
+      </div>
+    </header>
 
-            <ul>
-                
-            </ul>
-
-        </nav>
-    </main>
-    <section>
-        <ul class="lista-es">
-            <li><a href="Esercizio01/index.html">Esercitazione 1</a></li>
-            <li><a href="Esercizio02/index.html">Esercitazione 2</a></li>
-            <li><a href="Esercizio03/index.html">Esercitazione 3</a></li>
-            <li><a href="Esercizio04/index.html">Esercitazione 4</a></li>
-            <li><a href="Esercizio05/index.html">Esercitazione 5</a></li>
-            <li><a href="Esercizio06/index.html">Esercitazione 6</a></li>
-        </ul>
+    <section id="intro" class="section-card">
+      <p class="small">Clicca sui riquadri per aprire l'esercizio corrispondente.  
+      I file sono organizzati in <code>html/</code> e <code>js/</code>.</p>
     </section>
-    <script src="script.js" ></script>
-</body> 
+
+    <div class="grid">
+      <!-- Sezione HTML & CSS -->
+      <div class="section-card" id="html">
+        <div class="section-title">
+          <h2>📄 Esercizi HTML & CSS <span class="badge">5</span></h2>
+        </div>
+        <div class="cards">
+
+          <a class="link-card" href="html/Esercizio01/index.html">
+            <div class="icon">H1</div>
+            <div class="meta">
+                <div class="title">Esercizio 1 — Titoli e paragrafi</div>
+            </div>
+        </a>
+          <a class="link-card" href="html/Esercizio02/index.html">
+            <div class="icon">H2</div>
+            <div class="meta">
+                <div class="title">Esercizio 2 — Collegamenti ipertestuali</div>
+            </div>
+        </a>
+        <a class="link-card" href="html/Esercizio03/index.html">
+            <div class="icon">H3</div>
+            <div class="meta">
+                <div class="title">Esercizio 3 — Tabelle</div>
+            </div>
+        </a>
+        <a class="link-card" href="html/Esercizio04/index.html">
+            <div class="icon">H4</div>
+            <div class="meta">
+                <div class="title">Esercizio 4 — Box model e layout</div>
+            </div>
+        </a>
+        <a class="link-card" href="html/Esercizio05/index.html">
+            <div class="icon">H5</div>
+            <div class="meta">
+                <div class="title">Esercizio 5 — Form</div>
+            </div>
+        </a>
+        </div>
+      </div>
+
+      <!-- Sezione JavaScript -->
+      <div class="section-card" id="js">
+        <div class="section-title">
+          <h2>⚡ Esercizi JavaScript <span class="badge">6</span></h2>
+        </div>
+        <div class="cards">
+        <a class="link-card" href="js/Esercizio01/index.html">
+            <div class="icon">JS1</div>
+            <div class="meta">
+                <div class="title">Esercizio JS 1 — Operazioni e conversioni</div>
+            </div>
+        </a>
+        <a class="link-card" href="js/Esercizio02/index.html">
+            <div class="icon">JS2</div>
+            <div class="meta">
+                <div class="title">Esercizio JS 2 — Interazione con la pagina</div>
+            </div>
+        </a>
+        <a class="link-card" href="js/Esercizio03/index.html">
+            <div class="icon">JS3</div>
+            <div class="meta">
+                <div class="title">Esercizio JS 3 — Lettura da input</div>
+            </div>
+        </a>
+        <a class="link-card" href="js/Esercizio04/index.html">
+            <div class="icon">JS4</div>
+            <div class="meta">
+                <div class="title">Esercizio JS 4 — Aggiungere elementi</div>
+            </div>
+        </a>
+        <a class="link-card" href="js/Esercizio05/index.html">
+            <div class="icon">JS5</div>
+            <div class="meta">
+                <div class="title">Esercizio JS 5 — Modificare proprietà con pulsanti</div>
+            </div>
+        </a>
+        <a class="link-card" href="js/Esercizio06/index.html">
+            <div class="icon">JS6</div>
+            <div class="meta">
+                <div class="title">Esercizio JS 6 — Piccolo progetto: To-do list</div>
+            </div>
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="small">Creato per il compito • HTML & JavaScript</p>
+    </footer>
+  </main>
+</body>
 </html>
