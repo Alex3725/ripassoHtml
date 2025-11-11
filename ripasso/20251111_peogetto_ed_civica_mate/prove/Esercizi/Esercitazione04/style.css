@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background: black;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.chart-wrapper {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    width: 60%;
+    margin: 0 auto;
+}
+
+canvas {
+    width: 100% !important;
+    height: 400px !important;
+}
+
+@media (max-width: 768px) {
+    .chart-wrapper {
+        width: 90%;
+        padding: 1rem;
+    }
+    
+    body {
+        padding: 1rem;
+    }
+}
