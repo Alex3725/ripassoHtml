@@ -1,70 +1,75 @@
-const ctx = document.getElementById('grafico').getContext('2d');
+// --- DATI ---
+const labels = ["Prod A", "Prod B", "Prod C", "Servizi"];
 
-const data = {
-  labels: ['Gen', 'Feb', 'Mar', 'Apr', 'Mag', 'Giu', 'Lug', 'Ago', 'Set', 'Ott', 'Nov', 'Dic'],
-  datasets: [
-{
-      label: '2024',
-      data: [22, 24, 26, 25, 27, 28, 23, 15, 14,14, 13, 15,],
-      tension: 0.3,
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      borderColor: 'rgba(255, 99, 132, 1)',
-      borderWidth: 1
+const data2024 = [120, 80, 45, 55];
+const data2025 = [150, 60, 70, 40];
+
+const colors = ["#3b82f6", "#ef4444", "#f59e0b", "#10b981"];
+
+
+// Funzione che somma gli elementi
+function getTotal(arr) {
+  return arr.reduce((a, b) => a + b, 0);
+}
+
+
+// Funzione che crea un doughnut
+function createDoughnut(canvasId, legendId, centerId, labels, values, colors) {
+
+  const canvas = document.getElementById(canvasId);
+  const total = getTotal(values);
+
+  // --- DOUGHNUT ---
+  const chart = new Chart(canvas, {
+    type: "doughnut",
+    data: {
+      labels: labels,
+      datasets: [{
+        data: values,
+        backgroundColor: colors,
+        borderColor: "white",
+        borderWidth: 2
+      }]
     },
-    
-    {
-      label: '2025',
-      data: [12, 14, 13, 15, 14, 16, 13, 27, 28,25, 27, 28,],
-      tension: 0.3,
-      backgroundColor: 'rgba(54, 162, 235, 0.5)',
-      borderColor: 'rgba(54, 162, 235, 1)',
-      borderWidth: 1
-    }
-]
-};
-
-
-
-const options = {
-    responsive: true,
-    plugins : {
-        
-      tooltip: {
-                  enabled: true
-        },
-        legend: {
-            position: 'top'
+    options: {
+      cutout: "65%", // spessore
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              const value = ctx.parsed;
+              const percent = (value / total * 100).toFixed(1);
+              return `${ctx.label}: ${value} (${percent}%)`;
+            }
+          }
         }
-
-    },
-    scales: {
-      y: { 
-        beginAtZero: false, 
-        ticks: { 
-          callback: v => v + '$' 
-        }, 
-
-      title: {
-      display: true,
-      text: '$' }
-      },
-
-    x: { 
-      title: { 
-      display: true, 
-      text: 'Mese' 
       }
     }
-    }
-  };
+  });
 
-  new Chart(ctx, {
-  type: 'bar',
-  data: data,
-  options: options
-});
+  // --- TESTO AL CENTRO ---
+  document.querySelector(`#${centerId} .total`).textContent = total;
 
-function Media(a,b) {
-  let somma = a + b;
-  return somma /2;
+  // --- LEGENDA PERSONALIZZATA ---
+  const legendBox = document.getElementById(legendId);
+  legendBox.innerHTML = "";
+
+  labels.forEach((label, i) => {
+    const item = document.createElement("div");
+    item.className = "item";
+
+    item.innerHTML = `
+      <div class="color-box" style="background:${colors[i]}"></div>
+      ${label}: ${values[i]} (${((values[i] / total) * 100).toFixed(1)}%)
+    `;
+
+    legendBox.appendChild(item);
+  });
 }
+
+
+// --- CREAZIONE DEI DUE GRAFICI ---
+createDoughnut("chart2024", "legend2024", "center2024", labels, data2024, colors, 2024);
+
+createDoughnut("chart2025", "legend2025", "center2025", labels, data2025, colors, 2025);

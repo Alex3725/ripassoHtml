@@ -1,14 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
 
-body{
-    background-color: black;
-    color: white;
+h1 {
     text-align: center;
+    margin-bottom: 25px;
 }
 
-h1{
-    background-color: rgb(46, 43, 43);
+/* --- LAYOUT --- */
+.grid {
+    display: grid;
+    gap: 20px;
 }
-#grafico{
-    width: 80%;
-    height: 60%;
+
+@media (min-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* --- CARD --- */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+/* --- DOUGHNUT + TESTO CENTRALE --- */
+.chart-box {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+}
+
+.center-text .total {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.center-text .label {
+    font-size: 12px;
+    color: gray;
+}
+
+/* --- LEGENDA --- */
+.legend {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.legend .item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.legend .color-box {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
 }

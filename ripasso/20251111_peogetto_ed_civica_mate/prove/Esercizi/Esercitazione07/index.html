@@ -1,19 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Grafici Doughnut 2024 vs 2025</title>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Prezzi</h1>
-    <canvas id="grafico"></canvas>
-    
+    <h1>Confronto 2024 vs 2025</h1>
 
+    <div class="grid">
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js">
-    </script>
+        <!-- GRAFICO 2024 -->
+        <div class="card">
+            <h2>Anno 2024</h2>
+
+            <div class="chart-box">
+                <canvas id="chart2024"></canvas>
+
+                <!-- Testo al centro -->
+                <div class="center-text" id="center2024">
+                    <div class="total">0</div>
+                    <div class="label">Totale 2024</div>
+                </div>
+            </div>
+
+            <div class="legend" id="legend2024"></div>
+        </div>
+
+        <!-- GRAFICO 2025 -->
+        <div class="card">
+            <h2>Anno 2025</h2>
+
+            <div class="chart-box">
+                <canvas id="chart2025"></canvas>
+
+                <!-- Testo al centro -->
+                <div class="center-text" id="center2025">
+                    <div class="total">0</div>
+                    <div class="label">Totale 2025</div>
+                </div>
+            </div>
+
+            <div class="legend" id="legend2025"></div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
+
 </html>
