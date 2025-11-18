@@ -37,8 +37,8 @@ function createDoughnut(canvasId, legendId, centerId, labels, values, colors) {
         legend: { display: false },
         tooltip: {
           callbacks: {
-            label: ctx => {
-              const value = ctx.parsed;
+            label: (ctx) => {
+              const value = ctx.parsed;//è un attributo del oggetto ctx dove sono salvati i valori
               const percent = (value / total * 100).toFixed(1);
               return `${ctx.label}: ${value} (${percent}%)`;
             }
@@ -73,3 +73,10 @@ function createDoughnut(canvasId, legendId, centerId, labels, values, colors) {
 createDoughnut("chart2024", "legend2024", "center2024", labels, data2024, colors, 2024);
 
 createDoughnut("chart2025", "legend2025", "center2025", labels, data2025, colors, 2025);
+
+
+function togliElementoRandom(params) {
+  data2024.pop()
+  document.getElementById('chart2024').getContext('2d').update();
+}
+
