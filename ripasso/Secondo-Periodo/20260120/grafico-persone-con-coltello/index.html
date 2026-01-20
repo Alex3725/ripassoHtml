@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisi Sicurezza Giovanile</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analisi sulla Percezione della Sicurezza tra i Giovani</h1>
+        <p class="subtitle">Presenti: 23 partecipanti</p>
+        
+        <div class="charts-grid">
+            <!-- Conoscenza di coetanei con coltello -->
+            <div class="chart-container">
+                <h2>Conosci coetanei che portano coltelli?</h2>
+                <canvas id="knowledgeChart"></canvas>
+            </div>
+
+            <!-- Frequenza -->
+            <div class="chart-container">
+                <h2>Frequenza del comportamento</h2>
+                <canvas id="frequencyChart"></canvas>
+            </div>
+
+            <!-- Amicizia -->
+            <div class="chart-container">
+                <h2>Erano tuoi amici?</h2>
+                <canvas id="friendshipChart"></canvas>
+            </div>
+
+            <!-- Motivi - Mostrarsi forti -->
+            <div class="chart-container">
+                <h2>Motivo: Mostrarsi forti</h2>
+                <canvas id="showStrengthChart"></canvas>
+            </div>
+
+            <!-- Motivi - Difesa -->
+            <div class="chart-container">
+                <h2>Motivo: Per difendersi</h2>
+                <canvas id="defenseChart"></canvas>
+            </div>
+
+            <!-- Deterrente -->
+            <div class="chart-container">
+                <h2>Come deterrente</h2>
+                <canvas id="deterrentChart"></canvas>
+            </div>
+
+            <!-- Gruppi etnici pericolosi -->
+            <div class="chart-container">
+                <h2>Esistono gruppi divisi per etnia pericolosi?</h2>
+                <canvas id="ethnicGroupsChart"></canvas>
+            </div>
+
+            <!-- Situazioni giustificate -->
+            <div class="chart-container">
+                <h2>Non sempre sbagliato portare coltello</h2>
+                <canvas id="justifiedChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
