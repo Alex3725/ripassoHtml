@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Esempi Promise</title>
+  style.css
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="header">
+        <h1>Promise</h1>
+        <span class="badge">JavaScript</span>
+      </div>
+
+      <!-- Controlli: input opzionale + bottone -->
+      <div class="controls">
+        <input type="number" id="numeroInput" placeholder="Inserisci un numero (opzionale)"/>
+        <input type="button" value="Esegui" id="myButton"/>
+      </div>
+
+      <!-- Risultati -->
+      <div id="result" aria-live="polite"></div>
+
+      <!-- (Opzionale) elenco esercizi per riferimento -->
+      <div class="code" style="margin-top:18px">
+        <strong>Esercizi:</strong>
+        <ol class="ex">
+          <li>Funzione che restituisce una Promise e, dopo 1 secondo, stampa “Operazione terminata”.</li>
+          <li>Promise che restituisce un numero casuale dopo 2 secondi e lo mostra con <code>.then</code>.</li>
+          <li>Promise che, dopo 2 secondi, restituisce <code>true</code> se un numero è positivo, altrimenti <code>reject</code>.</li>
+          <li>Promise che simula un caricamento dati: dopo 3 secondi stampa “Caricamento completato”.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
