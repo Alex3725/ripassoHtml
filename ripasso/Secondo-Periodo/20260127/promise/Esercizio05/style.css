@@ -1,0 +1,94 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sfondo pagina */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenitore */
+.container {
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+}
+
+/* Card stile moderno */
+.card {
+    background: #ffffffee;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Animazione card */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Titolo */
+.card h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+/* Input del form */
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    background: #f1f5f9;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+form input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px #6366f122;
+    outline: none;
+}
+
+/* Pulsante */
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: none;
+    background: #6366f1;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background: #4f46e5;
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+/* Output del risultato */
+#result {
+    margin-top: 18px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
